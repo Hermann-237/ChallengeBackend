@@ -1,4 +1,4 @@
-const Shop = require("../models/connection")
+const Shop = require("../models/connection");
 const allItem = (req, res) => {
     Shop.find({})
         .then(data => res.status(200).json(data))
